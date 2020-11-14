@@ -8,6 +8,13 @@
 
   <div class="row">
 
-    <div cl
+    <div class="col-sm-6" *ngFor="let repo of gitHubRepos">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{repo.name}}</h5>
+          <p class="card-text">{{repo.description}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
