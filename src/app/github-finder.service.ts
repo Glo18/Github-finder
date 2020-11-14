@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class GithubFinderService {
 username: string;
+clientsecret = '3eb032449485b957ebfddf2c5e38c5f594350318'
 
   constructor(private http:HttpClient) {
     console.log("service works");

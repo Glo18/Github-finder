@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubFinderService } from './github-finder.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchNavbarComponent } from './search-navbar/search-navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchNavbarComponent
   ],
   imports: [
     BrowserModule,
