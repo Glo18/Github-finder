@@ -8,7 +8,12 @@ export class GithubFinderService {
 
   constructor(private http:HttpClient) { }
 
-  getRepos(){
+ getProfileDesc(){
+   const description = 'This is a website';
+   return this.http.get('https://api.github.com/users/${description}/repos')
+ }
+ 
+  getProfileRepos(){
     const username = 'Glo18';
     return this.http.get('https://api.github.com/users/${username}/repos');
   }
