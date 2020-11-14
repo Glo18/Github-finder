@@ -5,8 +5,12 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class GithubFinderService {
+username: string;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+    console.log("service works");
+    this.username = 'Glo18'
+  }
 
  getProfileDesc(){
    const description = 'This is a website';
@@ -16,5 +20,9 @@ export class GithubFinderService {
   getProfileRepos(){
     const username = 'Glo18';
     return this.http.get('https://api.github.com/users/${username}/repos');
+  }
+
+  updateProfile(username:string){
+    this.username = username;
   }
 }
