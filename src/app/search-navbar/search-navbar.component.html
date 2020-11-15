@@ -7,6 +7,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <div class="jumbotron">
+            <form class="text-center">
+              <label for="search" class="sr-only">Search by Name:</label>
+              <input type="text" class="form-group mx-sm-3 mb-2" placeholder="Github username" [(ngModel)]="username"
+                name="username" (keyup)="findProfile()">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (keyup)="findProfile()">Find Me</button>
+            </form>
+          </div>
+
         <div class="collapse navbar-collapse text-right " id="navbarSupportedContent">
             <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link active" href="https://github.com/Glo18" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>GITHUB PROFILE</a>
