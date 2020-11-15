@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { GithubFinderService } from './github-finder.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchNavbarComponent } from './search-navbar/search-navbar.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchNavbarComponent
+    SearchNavbarComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
