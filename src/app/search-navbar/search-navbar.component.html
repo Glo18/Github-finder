@@ -15,3 +15,66 @@
             </nav>
             </div>
             </div>
+            <div class="container">
+                <div *ngIf="profile">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      {{profile.name}} <small>({{profile.login}})</small>
+                      <span *ngIf="profile.company">, Employee of  {{profile.company}}</span>
+                      {{profile.location}}
+                    </div>
+                    <br><br>
+                    <div class="">
+                      <div class="row">
+                        <div class="">
+              
+                          <img src="{{profile.avatar_url}}" class="img- img-responsive" alt="Profile Picture">
+              
+                        </div>
+                        <div class="col-sm-4">
+                          <ul class="list-group">
+                            <li class="list-group-items" *ngIf="profile.bio">{{profile.bio}}</li>
+                            <li class="list-group-items" *ngIf="profile.hireable">{{profile.hireable}}</li>
+                            <li class="list-group-items" *ngIf="profile.blog"><a href="{{profile.blog}}"
+                                target="_blank">{{profile.blog}}</a></li>
+                            <li class="list-group-items" *ngIf="profile.email"><a href="emailto:{{profile.email}}"
+                                target="_blank">{{profile.email}}</a></li>
+              
+                          </ul>
+              
+                        </div>
+                        <div class="">
+                          <div>
+                            <p>
+                              <span class="label label-default">Followers: {{profile.followers}}.</span>
+                              <span class="label label-default"> Following: {{profile.following}}.</span>
+                              <span class="label label-default"> Public Gists: {{profile.public_gists}}.</span>
+                              <span class="label label-default">Public Repositories: {{profile.public_repos}}.</span>
+                            </p>
+                            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-primary btn-sm">See Me On Github</a></p>
+              
+              
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h3 font-size:24px class="panel-title">Repositories</h3>
+                              </div>
+                              <div class="panel-body" *ngFor="let repo of repos">
+                                <p class="clearfix">
+                                  {{repo.name}} <a href="{{repo.html_url}}" class="btn btn-sm btn-secondary pull-right"
+                                    target="_blank">View The Project</a>
+              
+                                </p>
+                                <p>{{repo.description}}</p>
+                              </div>
+                            </div>
+                          </div>
+              
+              
+                        </div>
+              
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+              </div>     
