@@ -7,7 +7,7 @@ providedIn: 'root'
 })
 export class GithubFinderService {
 username: string;
-accesstoken = '20b066d8e8ecb2517a539ef223f4a9cc22b36a27'
+apiKey = '20b066d8e8ecb2517a539ef223f4a9cc22b36a27'
 
 constructor(private http:HttpClient) {
 console.log("service works");
