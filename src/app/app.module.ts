@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { GithubFinderService } from './github-finder.service';
 import { SearchNavbarComponent } from './search-navbar/search-navbar.component';
 import { FormComponent } from './form/form.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchNavbarComponent,
-    FormComponent
+    FormComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

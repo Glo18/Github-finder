@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,} from '@angular/core';
+import { GithubFinderService } from '../github-finder.service';
 
 @Component({
   selector: 'app-search-navbar',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchNavbarComponent implements OnInit {
 
-  constructor() { }
+  username: string;
+  repos: any;
+  profile: any;
 
-  ngOnInit(): void {
+  constructor(private githubfinderService: GithubFinderService) { 
+
+  }
+
+  findProfile(){
+    this.githubfinderService.updateProfile(this.username);
+    this.githubfinderService.getProfileDesc().subscribe(profile =>{
+      console.log(profile);
+      this.profile = profile;
+    });
+    
+    this.githubfinderService.getProfileRepos().subscribe(repos =>{
+      console.log(repos);
+      this.repos = repos;
+    })
+  }
+
+  ngOnInit() {
   }
 
 }

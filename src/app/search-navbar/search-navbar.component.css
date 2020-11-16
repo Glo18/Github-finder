@@ -1,0 +1,22 @@
+a {
+    background-color: burlywood;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    background: cyan;
+    display: block;
+    border-radius: 40px;
+    
+}
+
+button {
+background-color: cyan;
+border: 1px solid;
+}
+
+label {
+    background-attachment: fixed;
+    background-color: blanchedalmond;
+    display: -webkit-box;
+}
