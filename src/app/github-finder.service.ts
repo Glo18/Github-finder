@@ -6,6 +6,7 @@ import { environment } from 'src/environments/environment';
 providedIn: 'root'
 })
 export class GithubFinderService {
+  apiKEY:string;
 username: string;
 apiKey = '20b066d8e8ecb2517a539ef223f4a9cc22b36a27'
 
