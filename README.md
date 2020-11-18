@@ -33,6 +33,9 @@ CSS
 JavaScript
 Angular
 
+## Link to gh-pages
+https://github.com/Glo18
+
 ## Support and contact details
 https://github.com/Glo18
 
