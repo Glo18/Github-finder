@@ -19,7 +19,7 @@ Angular
 Node.js
 
 ## Setup/Installation Requirements
-https://github.com/goldangera/IP-Git-search
+ https://glo18.github.io/Github-finder/
 download the zip file
 unzip it on the folder that has angular installed
 navigate to the unzipped folder on your terminal and run the commmand ng serve
