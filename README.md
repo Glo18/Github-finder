@@ -1,10 +1,10 @@
-Github-finder
-This is an application that allows users to search for github users based on their username and also allows users to search for github repositories.
+## Github-finder
+This is a website where users may enter a GitHub username and see names and descriptions of that person's public repositories ..
 By Glory Kiogora
-Description
+### Description
 This application allows users to search for github users and view their repositories. They can click the buttons provided to open the user's profile and repositories on github. The user can also search for repositories using a search term.
 
-BDD
+### BDD
 The program provides an input to search for a user
 
 Example input: Glo18
@@ -13,10 +13,12 @@ The program provides an input to search for a repository
 
 Example input: calculator
 Example output: displays all the repositories with the string calculator in the repository's name
-Prerequisites
+
+## Prerequisites
 Angular
 Node.js
-Setup/Installation Requirements
+
+## Setup/Installation Requirements
 https://github.com/goldangera/IP-Git-search
 download the zip file
 unzip it on the folder that has angular installed
@@ -25,16 +27,14 @@ open your browser and type localhost/4200 as the url
 Known Bugs
 None
 
-Technologies used
+## Technologies used
 HTML
 CSS
 JavaScript
 Angular
-Link To gh-pages
-https://github.com/goldangera
 
-Support and contact details
+## Support and contact details
 https://github.com/Glo18
 
-License
-MIT Copyright (c) 2019 Glo18
+## License
+MIT Copyright (c) 2019 Glory Kiogora
